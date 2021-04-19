@@ -1,0 +1,8 @@
+{
+  "name": "DCS_Server_Status_Bot",
+  "version": "1.0.0",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^8.2.0"
+  }
+}

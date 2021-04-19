@@ -10,7 +10,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-    if(msg.author.username != 'DCS_Server_Status'){
+    if(msg.author.username !== 'DCS_Server_Status'){
         if(msg.content === "kirk-help"){
             help(msg)
 

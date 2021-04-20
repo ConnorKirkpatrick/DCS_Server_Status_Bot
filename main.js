@@ -3,8 +3,7 @@ const client = new Discord.Client();
 const dotenv = require("dotenv").config();
 
 const help = require("./help")
-const server = require("./server_connection")
-
+const server = require("./server_monitor")
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
@@ -25,5 +24,8 @@ client.on('message', msg => {
 });
 
 client.login(process.env.token);
-server()
+
+let serverData = server((data) =>{
+    console.log(data)
+})
 
